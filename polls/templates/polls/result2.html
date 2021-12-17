@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} 결과값 표시 {% endblock %}
+{% block content %}
+<h4>결과값 표시</h4>
+{% for question in question_list %}
+<ul>
+    {{ question.choice_text }}
+    {{ question.votes }}
+</ul>
+{% endfor %}
+
+{% endblock %}
